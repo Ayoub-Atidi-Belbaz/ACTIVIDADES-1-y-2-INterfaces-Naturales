@@ -19,3 +19,11 @@
 * **Estado:** Verificado y sincronizado con GitHub.
 
 ---
+
+### [Hito #3] · 2026-11-19 18:32:00
+* **Acción:** perf: optimizar tiempo de inicializacion del motor SpeechToText en lista_voz
+* **Descripción:** Calibracion del timeout de 5 segundos y gestion de permisos antes de activar el buffer de audio.
+* **Autor:** Ayoub Atidi Belbaz
+* **Estado:** Verificado y sincronizado con GitHub.
+
+---
