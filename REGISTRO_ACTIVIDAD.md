@@ -35,3 +35,11 @@
 * **Estado:** Verificado y sincronizado con GitHub.
 
 ---
+
+### [Hito #5] · 2026-11-19 18:34:00
+* **Acción:** style: pulir retroalimentacion haptica y feedback visual en botones de accion
+* **Descripción:** Mejora del contraste y animacion en el boton flotante del microfono con color Tiffany Blue (#0ABAB5).
+* **Autor:** Ayoub Atidi Belbaz
+* **Estado:** Verificado y sincronizado con GitHub.
+
+---
