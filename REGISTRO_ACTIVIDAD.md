@@ -11,3 +11,11 @@
 * **Estado:** Verificado y sincronizado con GitHub.
 
 ---
+
+### [Hito #2] · 2026-11-19 18:24:09
+* **Acción:** test: anadir casos de prueba para deteccion de sacudida en modo avion
+* **Descripción:** Verificación de la respuesta táctil y sensores cuando no hay conectividad de red.
+* **Autor:** Ayoub Atidi Belbaz
+* **Estado:** Verificado y sincronizado con GitHub.
+
+---
