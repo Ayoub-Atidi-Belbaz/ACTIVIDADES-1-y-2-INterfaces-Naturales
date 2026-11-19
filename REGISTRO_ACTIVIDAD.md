@@ -27,3 +27,11 @@
 * **Estado:** Verificado y sincronizado con GitHub.
 
 ---
+
+### [Hito #4] · 2026-11-19 18:33:00
+* **Acción:** docs: profundizar analisis comparativo de sensores userAccelerometer vs accelerometer
+* **Descripción:** Reflexion tecnica sobre la compensacion del vector gravitatorio de 9.8 m/s2 en dispositivos moviles.
+* **Autor:** Ayoub Atidi Belbaz
+* **Estado:** Verificado y sincronizado con GitHub.
+
+---
