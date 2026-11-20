@@ -43,3 +43,11 @@
 * **Estado:** Verificado y sincronizado con GitHub.
 
 ---
+
+### [Hito #6] · 2026-11-20 15:19:17
+* **Acción:** refactor: estructurar constantes de umbrales y tiempos de debounce en notas_gestos
+* **Descripción:** Centralizacion del umbral euclideo (15.0 m/s2) y la pausa de cooldown (1 segundo) para evitar falsos positivos.
+* **Autor:** Ayoub Atidi Belbaz
+* **Estado:** Verificado y sincronizado con GitHub.
+
+---
