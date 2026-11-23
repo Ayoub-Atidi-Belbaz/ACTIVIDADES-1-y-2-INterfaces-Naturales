@@ -19,8 +19,14 @@ class ListaVozApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.indigo,
+          seedColor: const Color(0xFF0ABAB5),
+          primary: const Color(0xFF0ABAB5),
           brightness: Brightness.light,
+        ),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0xFF0ABAB5),
+          foregroundColor: Colors.white,
+          elevation: 2,
         ),
       ),
       home: const PantallaListaVoz(),
@@ -394,7 +400,7 @@ class _PantallaListaVozState extends State<PantallaListaVoz> {
                         shape: BoxShape.circle,
                         color: !_speechDisponible
                             ? Colors.grey.shade400
-                            : (_estaEscuchando ? Colors.red.shade600 : Colors.indigo.shade600),
+                            : (_estaEscuchando ? Colors.red.shade600 : const Color(0xFF0ABAB5)),
                         boxShadow: _estaEscuchando
                             ? [
                                 BoxShadow(
@@ -438,7 +444,7 @@ class _PantallaListaVozState extends State<PantallaListaVoz> {
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Icon(Icons.record_voice_over, size: 20, color: Colors.indigo),
+                        const Icon(Icons.record_voice_over, size: 20, color: Color(0xFF0ABAB5)),
                         const SizedBox(width: 8),
                         Expanded(
                           child: Text(
@@ -561,11 +567,11 @@ class _PantallaListaVozState extends State<PantallaListaVoz> {
                           margin: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 4.0),
                           child: ListTile(
                             leading: CircleAvatar(
-                              backgroundColor: Colors.indigo.shade100,
+                              backgroundColor: const Color(0xFFE0F7F6),
                               child: Text(
                                 '${index + 1}',
                                 style: TextStyle(
-                                  color: Colors.indigo.shade800,
+                                  color: Color(0xFF007A78),
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
