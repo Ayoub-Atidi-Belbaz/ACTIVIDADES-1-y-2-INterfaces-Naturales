@@ -20,7 +20,7 @@ class NotasGestosApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.deepPurple,
+          seedColor: const Color(0xFF0ABAB5),
           brightness: Brightness.light,
         ),
       ),
@@ -312,7 +312,7 @@ class _PantallaNotasState extends State<PantallaNotas> {
                     ? Icons.vibration
                     : Icons.phone_android,
                 color: _tieneAcelerometro && _agitarActivo
-                    ? Colors.deepPurple.shade900
+                    ? const Color(0xFF005B59)
                     : Colors.grey,
               ),
             ),
@@ -337,7 +337,7 @@ class _PantallaNotasState extends State<PantallaNotas> {
               ),
               secondary: Icon(
                 Icons.screen_rotation_alt,
-                color: _agitarActivo && _tieneAcelerometro ? Colors.deepPurple : Colors.grey,
+                color: _agitarActivo && _tieneAcelerometro ? const Color(0xFF0ABAB5) : Colors.grey,
               ),
               value: _agitarActivo && _tieneAcelerometro,
               onChanged: _tieneAcelerometro ? _conmutarAgitado : null,
@@ -433,16 +433,16 @@ class _PantallaNotasState extends State<PantallaNotas> {
         if (_ultimaNotaBorrada != null)
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-            color: Colors.deepPurple.shade50,
+            color: Color(0xFFF0FAF9),
             child: Row(
               children: [
-                const Icon(Icons.restore, size: 18, color: Colors.deepPurple),
+                const Icon(Icons.restore, size: 18, color: Color(0xFF0ABAB5)),
                 const SizedBox(width: 8),
                 Expanded(
                   child: Text(
                     'Hay una nota lista para recuperar: "${_ultimaNotaBorrada!.texto}"',
                     style: TextStyle(
-                      color: Colors.deepPurple.shade900,
+                      color: Color(0xFF005B59),
                       fontSize: 12,
                       fontWeight: FontWeight.w500,
                     ),
@@ -512,11 +512,11 @@ class _PantallaNotasState extends State<PantallaNotas> {
                         margin: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 4.0),
                         child: ListTile(
                           leading: CircleAvatar(
-                            backgroundColor: Colors.deepPurple.shade100,
+                            backgroundColor: const Color(0xFFE0F7F6),
                             child: Text(
                               '${index + 1}',
                               style: TextStyle(
-                                color: Colors.deepPurple.shade800,
+                                color: Color(0xFF007A78),
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
@@ -594,7 +594,7 @@ class _PantallaNotasState extends State<PantallaNotas> {
                       margin: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 4.0),
                       color: Colors.grey.shade50,
                       child: ListTile(
-                        leading: const Icon(Icons.restore_from_trash, color: Colors.deepPurple),
+                        leading: const Icon(Icons.restore_from_trash, color: Color(0xFF0ABAB5)),
                         title: Text(
                           textoPapelera,
                           style: const TextStyle(decoration: TextDecoration.lineThrough),
