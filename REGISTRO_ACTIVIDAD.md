@@ -51,3 +51,11 @@
 * **Estado:** Verificado y sincronizado con GitHub.
 
 ---
+
+### [Hito #7] · 2026-11-23 15:21:40
+* **Acción:** docs: documentar matriz de compatibilidad de plataformas moviles (Android/iOS)
+* **Descripción:** Revision de permisos de microfono y sensores para despliegue multiplataforma en Flutter.
+* **Autor:** Ayoub Atidi Belbaz
+* **Estado:** Verificado y sincronizado con GitHub.
+
+---
