@@ -21,7 +21,13 @@ class NotasGestosApp extends StatelessWidget {
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
           seedColor: const Color(0xFF0ABAB5),
+          primary: const Color(0xFF0ABAB5),
           brightness: Brightness.light,
+        ),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0xFF0ABAB5),
+          foregroundColor: Colors.white,
+          elevation: 2,
         ),
       ),
       home: const PantallaNotas(),
