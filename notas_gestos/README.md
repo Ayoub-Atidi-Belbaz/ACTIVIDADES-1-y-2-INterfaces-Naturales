@@ -6,7 +6,7 @@
 ---
 
 ## 🎯 Descripción del Proyecto
-En esta actividad he desarrollado una aplicación de notas en Flutter que detecta gestos físicos de movimiento mediante los sensores del smartphone (acelerómetro inercial). La app permite deshacer el borrado de una nota agitando el móvil (*Shake to Undo*), implementando de forma estricta los requisitos de accesibilidad del criterio **WCAG 2.2 · 2.5.4 (Activación mediante movimiento)**.
+En esta actividad se ha desarrollado una aplicación de notas en Flutter que detecta gestos físicos de movimiento mediante los sensores del telefono (acelerómetro inercial). La app permite deshacer el borrado de una nota agitando el móvil (*Shake to Undo*), implementando de forma estricta los requisitos de accesibilidad del criterio **WCAG 2.2 · 2.5.4 (Activación mediante movimiento)**.
 
 ---
 
@@ -60,8 +60,8 @@ Batería de tests automatizados que cubren el 100% de la lógica inercial y de U
 
 ### 1. Comparativa de umbrales (10, 15 y 25 m/s²) caminando con el móvil en la mano: ¿Cuál elijo y por qué?
 - **Umbral de 10 m/s²:** Es excesivamente sensible. Al caminar con el móvil en la mano o en el bolsillo, las oscilaciones naturales del paso y el braceo alcanzan picos de entre 8 y 12 m/s². Con 10 m/s², la aplicación produce continuos **falsos positivos**, restaurando notas sin que el usuario lo haya deseado.
-- **Umbral de 25 m/s²:** Es excesivamente duro. Exige un movimiento brusco, violento y forzado del brazo. Esto causa incomodidad física, fatiga y un peligro real de que el smartphone se resbale de las manos y sufra una caída, además de ser inaccesible para personas con menor fuerza o temblores.
-- **Umbral seleccionado: 15 m/s²:** **Es el valor óptimo.** Filtra con solvencia la aceleración parásita de la marcha humana ordinaria, pero se activa de manera limpia y natural mediante un movimiento seco y consciente de la muñeca.
+- **Umbral de 25 m/s²:** Es excesivamente duro. Exige un movimiento brusco, violento y forzado del brazo. Esto causa incomodidad física, fatiga y un peligro real de que el telefono se resbale de las manos y sufra una caída, además de ser inaccesible para personas con menor fuerza o temblores.
+- **Umbral seleccionado: 15 m/s²:** **He elegido 15 m/s² por ser el valor óptimo.** Filtra con solvencia la aceleración parásita de la marcha humana ordinaria, pero se activa de manera limpia y natural mediante un movimiento seco y consciente de la muñeca.
 
 ---
 
@@ -72,8 +72,8 @@ Batería de tests automatizados que cubren el 100% de la lógica inercial y de U
 ---
 
 ### 3. Explicación de las dos condiciones de la pauta WCAG 2.2 · 2.5.4 cumplidas por la app
-El criterio de conformidad **WCAG 2.5.4 (Activación mediante movimiento)** exige que cualquier funcionalidad controlable mediante sensores de movimiento del dispositivo cumpla dos condiciones imperativas:
+El criterio de conformidad **WCAG 2.5.4 (Activación mediante movimiento)** exige que cualquier funcionalidad controlable mediante sensores de movimiento del dispositivo cumpla dos condiciones imperativas, las cuales he integrado en la app:
 1. **Alternativa accesible equivalente (Criterio 2.5.4.a):**
-   - La funcionalidad no puede ser exclusiva del movimiento físico. En nuestra aplicación, cuando una nota es eliminada, se presenta de forma inmediata un botón táctil convencional **«Deshacer»** en el `SnackBar`. Además, las notas borradas quedan accesibles en la pestaña táctil de Papelera, garantizando que un usuario con el móvil anclado a un soporte, en silla de ruedas o con movilidad reducida pueda recuperar la nota exactamente igual.
+   - La funcionalidad no puede ser exclusiva del movimiento físico. En mi aplicación, cuando una nota es eliminada, he implementado de forma inmediata un botón táctil convencional **«Deshacer»** en el `SnackBar`. Además, las notas borradas quedan accesibles en la pestaña táctil de Papelera, garantizando que un usuario con el móvil anclado a un soporte, en silla de ruedas o con movilidad reducida pueda recuperar la nota exactamente igual.
 2. **Capacidad de desactivación (Criterio 2.5.4.b):**
-   - El usuario debe poder inhabilitar la respuesta al movimiento para prevenir activaciones accidentales causadas por temblores involuntarios (ej. Parkinson) o vibraciones del entorno (transporte público). Nuestra app incorpora en la cabecera un control explícito `SwitchListTile` («Agitar para deshacer») que apaga de inmediato la escucha del sensor cuando el usuario lo desea.
+   - El usuario debe poder inhabilitar la respuesta al movimiento para prevenir activaciones accidentales causadas por temblores involuntarios (ej. Parkinson) o vibraciones del entorno (transporte público). En mi app he incorporado en la cabecera un control explícito `SwitchListTile` («Agitar para deshacer») que apaga de inmediato la escucha del sensor cuando el usuario lo desea.
