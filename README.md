@@ -124,7 +124,6 @@ Crear una aplicación de notas en la que agitar el teléfono (*Shake to Undo*) r
 
 ## 📝 Respuestas Académicas y Reflexiones Técnicas (Paso 5)
 
-*(Redactadas en primera persona)*
 
 ### 🎙️ Actividad 1: Reconocimiento y Síntesis de Voz
 
