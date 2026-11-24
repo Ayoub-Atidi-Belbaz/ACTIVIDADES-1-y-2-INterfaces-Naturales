@@ -67,3 +67,11 @@
 * **Estado:** Verificado y sincronizado con GitHub.
 
 ---
+
+### [Hito #9] · 2026-11-24 15:25:47
+* **Acción:** ci: verificar analisis estatico de codigo con flutter analyze sin warnings
+* **Descripción:** Comprobacion de buenas practicas y linters recomendados en analysis_options.yaml.
+* **Autor:** Ayoub Atidi Belbaz
+* **Estado:** Verificado y sincronizado con GitHub.
+
+---
