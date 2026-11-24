@@ -59,3 +59,11 @@
 * **Estado:** Verificado y sincronizado con GitHub.
 
 ---
+
+### [Hito #8] · 2026-11-24 15:23:27
+* **Acción:** test: pruebas de robustez ante textos vacios y comandos de voz compuestos
+* **Descripción:** Validacion de la funcion pura interpretarComando ante sinonimos y frases complejas.
+* **Autor:** Ayoub Atidi Belbaz
+* **Estado:** Verificado y sincronizado con GitHub.
+
+---
