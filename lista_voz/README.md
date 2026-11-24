@@ -59,7 +59,7 @@ Al activar el **Modo Avión** en el teléfono móvil:
   1. **Privacidad:** El procesamiento *on-device* garantiza que la señal vocal y los datos biométricos del usuario no abandonen el dispositivo móvil, cumpliendo con el RGPD y evitando brechas de seguridad. Por contra, el modelo en la nube envía muestras de audio a centros de datos externos.
   2. **Coste:** El reconocimiento local tiene coste cero recurrente y no consume datos móviles de la tarifa del usuario. El reconocimiento en servidor puede conllevar costes por petición API (en entornos empresariales) y consumo de datos.
   3. **Latencia:** El procesamiento local es instantáneo al eliminar el tiempo de ida y vuelta por la red (RTT). En el servidor, la latencia depende directamente de la cobertura (4G/5G/WiFi), introduciendo retardos perceptibles de entre 300 ms y más de un segundo.
-  4. **Plataforma / Recursos:** El reconocimiento local exige mayor consumo de memoria, almacenamiento y cómputo de la NPU/CPU del smartphone. El reconocimiento en la nube permite delegar la carga computacional a servidores de gran potencia, haciendo posible ejecutar modelos más complejos en dispositivos con recursos limitados.
+  4. **Plataforma / Recursos:** El reconocimiento local exige mayor consumo de memoria, almacenamiento y cómputo de la NPU/CPU del telefono. El reconocimiento en la nube permite delegar la carga computacional a servidores de gran potencia, haciendo posible ejecutar modelos más complejos en dispositivos con recursos limitados.
 
 ---
 
